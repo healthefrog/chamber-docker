@@ -6,3 +6,4 @@ RUN chmod +x /chamber
 FROM scratch
 COPY --from=fetch /chamber /chamber/chamber
 VOLUME /chamber
+ENTRYPOINT ["/chamber/chamber"]
